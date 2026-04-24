@@ -1,0 +1,38 @@
+<html>
+    <html lang="pl">
+<head>
+    <title></title>
+    <style>
+        #LADNE{
+             text-decoration: wavy;
+            background: linear-gradient(to left, red, lightblue,black, yellow, green, pink, purple, orange, cyan, magenta, white, gray);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+             text-align: center;
+                font-size: 50px;
+        }
+        #LADNE:hover{
+            background: linear-gradient(to left, red, lightblue,black, yellow, green, pink, purple, orange, cyan, magenta, white, gray);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 60px;
+        }
+    </style>
+</head>
+ <body>
+<button onclick="checkCode()">Wpisz kod</button>
+<a href="https://pl.wikipedia.org/wiki/Ksiądz" id="LADNE" style="display:none;">Dwano dwano temu</a>
+<script>
+function checkCode() {
+    var code = prompt("Wpisz kod:");
+    if (code === "ksiadz") {
+        document.getElementById("LADNE").style.display = "block";
+    } else {
+        alert("Zły kod");
+    }
+}
+</script>
+ </body>
+ </html>
